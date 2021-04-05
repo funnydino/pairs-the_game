@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Пономарёв Алексей">
+  <meta name="keywords" content="javascript, skillbox, frontend">
+  <meta name="description" content="Изучение языка программирования JavaScript">
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/main.js"></script>
+  <title>Игра "Найди пару"</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="game-title">Игра "Найди пару"</h1>
+    <hr>
+    <div class="sandbox">
+      <div class="timer timer__hidden">&nbsp;</div>
+      <button class="btn restart__btn">
+        Новая игра
+      </button>
+      <div class="start start__block">
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option" value="2">
+              <input type="radio" class="radio" id="pairs2" name="category">
+              <label for="pairs2">2 пары</label>
+            </div>
+            <div class="option" value="4">
+              <input type="radio" class="radio" id="pairs4" name="category">
+              <label for="pairs4">4 пары</label>
+            </div>
+            <div class="option" value="6">
+              <input type="radio" class="radio" id="pairs6" name="category">
+              <label for="pairs6">6 пар</label>
+            </div>
+            <div class="option" value="8">
+              <input type="radio" class="radio" id="pairs8" name="category">
+              <label for="pairs8">8 пар</label>
+            </div>
+            <div class="option" value="10">
+              <input type="radio" class="radio" id="pairs10" name="category">
+              <label for="pairs10">10 пар</label>
+            </div>
+            <div class="option" value="12">
+              <input type="radio" class="radio" id="pairs12" name="category">
+              <label for="pairs12">12 пар</label>
+            </div>
+          </div>
+          <div class="selected">
+            Выберите количество пар:
+          </div>
+        </div>
+        <div class="difficulty">
+          <h2 class="section-title">
+            Выберите уровень сложности:
+          </h2>
+          <div class="difficulty__block">
+            <label for="easy" class="difficulty__level">
+              <input type="radio" name="difficulty" id="easy" checked>
+              <span>Лёгкий</span>
+            </label>
+            <label for="medium" class="difficulty__level">
+              <input type="radio" name="difficulty" id="medium">
+              <span>Средний</span>
+            </label>
+            <label for="hard" class="difficulty__level">
+              <input type="radio" name="difficulty" id="hard">
+              <span>Сложный</span>
+            </label>
+          </div>
+        </div>
+        <button class="btn start__btn">
+          Начать игру
+        </button>
+      </div>
+      <hr>
+      <div class="cards-field">
+
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <button class="popup__close">
+        &times;
+      </button>
+      <h2 class="game-title game-title--finish">Поздравляю! Вы выиграли!</h2>
+      <button class="btn new-game__btn">
+        Играть ещё раз
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
